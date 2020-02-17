@@ -4,16 +4,21 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "prestart": "tsc src/main.ts",
+    "start": "node src/main.js",
     "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^25.1.0",
-    "ts-jest": "^25.2.0",
+    "@types/node": "^13.7.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0"
   }
 }

@@ -1,10 +1,11 @@
 class Pokemon {
     name: string;
-    type: string;
+    speed: number;
 
 
-    constructor(pName: string) {
-        this.name = pName;
+    constructor(name: string, speed: number) {
+        this.name = name;
+        this.speed = speed;
     }
 }
 
